@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background: #f8f9fa; /* Levemente alterado para fundo off-white */
-    color: #333;
+    background: #0d0d0d; /* Fundo cinza ainda mais escuro */
+    color: #ccc; /* Cor do texto ajustada para contraste */
     min-height: 100vh;
     overflow-x: hidden;
     line-height: 1.6;
@@ -46,8 +46,8 @@ img {
 }
 
 .header.scrolled {
-    background-color: rgba(26, 54, 93, 0.95); /* Cor do menu no scroll */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(87, 87, 87, 0.95); /* Cor do menu no scroll - mais escuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-inner {
@@ -137,9 +137,9 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #1a365d; /* Cor de fundo do dropdown */
+    background: #111; /* Fundo do dropdown mais escuro */
     min-width: 180px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Sombra mais forte */
     border-radius: 0 0 8px 8px;
     z-index: 10;
     overflow: hidden; /* Esconder bordas do primeiro/último item */
@@ -158,7 +158,7 @@ img {
 .dropdown-menu li a {
     display: block;
     padding: 12px 20px;
-    color: #fff;
+    color: #ccc; /* Cor do texto do dropdown ajustada */
     font-size: 1rem;
     transition: background 0.2s ease-in-out;
     text-transform: none; /* Remover uppercase no dropdown */
@@ -167,7 +167,7 @@ img {
 
 .dropdown-menu li a:hover {
     background: #ffd600; /* Cor de hover */
-    color: #1a365d; /* Cor do texto no hover */
+    color: #111; /* Cor do texto no hover */
 }
 
 /* Hero */
@@ -190,7 +190,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.55); /* Ajustado overlay */
+    background: rgba(0, 0, 0, 0.65); /* Overlay mais escuro */
     z-index: 1;
 }
 
@@ -211,7 +211,7 @@ img {
     font-weight: 700;
     color: #fff;
     margin-bottom: 1rem; /* Ajustado margem */
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* Ajustado sombra */
+    text-shadow: 2px 2px 18px rgba(0, 0, 0, 0.6); /* Sombra mais forte */
     line-height: 1.1;
     text-align: center;
 }
@@ -219,12 +219,12 @@ img {
 .hero-subtitle {
     font-size: 1.25rem; /* Ajustado tamanho */
     font-style: italic;
-    color: #fff;
+    color: #ccc; /* Cor do subtítulo ajustada */
     text-align: center; /* Centralizado */
     width: 100%;
     margin-top: 0; /* Resetar margem */
     margin-right: 0; /* Resetar margem */
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); /* Ajustado sombra */
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
     position: relative; /* Alterado para relative */
     bottom: auto; /* Resetar posição */
     right: auto; /* Resetar posição */
@@ -238,11 +238,11 @@ img {
     bottom: 40px; /* Ajustado posição */
     transform: translateX(-50%);
     z-index: 2;
-    color: #fff;
+    color: #ffd600; /* Cor da seta ajustada */
     font-size: 3rem; /* Ajustado tamanho */
-    opacity: 0.9; /* Ajustado opacidade */
+    opacity: 1; /* Opacidade total */
     animation: bounce 2s infinite;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4)); /* Ajustado sombra */
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5)); /* Sombra mais forte */
     cursor: pointer;
 }
 
@@ -260,9 +260,9 @@ img {
     left: 20px; /* Ajustado posição */
     bottom: 20px; /* Ajustado posição */
     z-index: 2;
-    color: #fff; /* Ajustado cor */
+    color: #888; /* Cor do ícone info ajustada */
     font-size: 1.4rem; /* Ajustado tamanho */
-    opacity: 0.8; /* Ajustado opacidade */
+    opacity: 0.7; /* Ajustado opacidade */
     cursor: pointer;
 }
 
@@ -271,13 +271,13 @@ img {
     position: absolute;
     left: 30px; /* Ajustado posição */
     bottom: 0;
-    background: #1a365d; /* Cor de fundo do tooltip */
-    color: #fff;
+    background: #111; /* Fundo do tooltip mais escuro */
+    color: #ccc; /* Cor do texto do tooltip ajustada */
     padding: 8px 16px; /* Ajustado padding */
     border-radius: 6px;
     font-size: 0.9rem; /* Ajustado tamanho */
     white-space: nowrap;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .hero-info:focus .tooltip,
@@ -289,8 +289,8 @@ img {
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #1a365d;
-    margin-bottom: 50px; /* Ajustado margem */
+    color: #ffd600; /* Cor do título ajustada */
+    margin-bottom: 50px;
 }
 
 .about, .team, .servicos, .contato {
@@ -298,7 +298,7 @@ h2 {
 }
 
 .about {
-    background: #fff;
+    background: #1a1a1a; /* Fundo da seção About */
 }
 
 .about-content {
@@ -313,7 +313,7 @@ h2 {
     width: 450px; /* Ajustado tamanho */
     max-width: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .about-text {
@@ -324,6 +324,7 @@ h2 {
     margin-bottom: 15px;
     font-size: 1.1rem;
     line-height: 1.7;
+    color: #bbb; /* Cor do texto ajustada */
 }
 
 .about-list {
@@ -335,55 +336,117 @@ h2 {
 .about-list li {
     margin-bottom: 8px;
     font-size: 1.1rem;
+    color: #bbb; /* Cor do texto ajustada */
 }
 
 .team {
-    background: #f8f9fa;
+    background: #0d0d0d; /* Fundo off-white */
 }
 
 .team-grid {
     display: flex;
-    gap: 30px; /* Ajustado gap */
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .team-card {
-    background: #fff;
+    background: #313030; /* Fundo branco */
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
     padding: 24px 18px;
     text-align: center;
-    width: 240px; /* Ajustado largura */
+    width: 240px;
     transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Adicionado para posicionamento absoluto dos filhos */
 }
 
 .team-card:hover {
-    transform: translateY(-8px); /* Ajustado hover */
+    transform: translateY(-8px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .team-card img {
-    width: 100px; /* Ajustado tamanho */
-    height: 100px; /* Ajustado tamanho */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 0 auto 15px auto; /* Centralizar imagem */
-    object-fit: cover; /* Garantir que a imagem preencha o círculo */
+    margin: 0 auto 15px auto;
+    object-fit: cover;
 }
 
 .team-card h3 {
-    margin-bottom: 6px; /* Ajustado margem */
-    font-size: 1.3rem; /* Ajustado tamanho */
-    color: #1a365d; /* Cor do título */
+    margin-bottom: 6px;
+    font-size: 1.3rem;
+    color: #dfaa1b;
 }
 
 .team-card p {
     font-size: 1rem;
-    color: #555; /* Cor do cargo */
+    color: #c0b9b9;
+    margin-bottom: 15px;
+}
+
+.btn-saiba-mais {
+    display: inline-block;
+    background: #545557;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-top: auto;
+}
+
+.btn-saiba-mais:hover {
+    background: #f5cf11;
+    color: #1a365d;
+}
+
+.team-info-details {
+    /* Inicialmente oculto e com escala menor para animação */
+    opacity: 0; /* Torna invisível */
+    transform: scale(0.9); /* Reduz ligeiramente o tamanho */
+    pointer-events: none; /* Impede interações enquanto oculto */
+
+    position: absolute; /* Posicionar sobre o card */
+    top: 0; /* Começar do topo do card */
+    left: 0; /* Começar da esquerda do card */
+    right: 0; /* Ir até a direita do card */
+    bottom: 0; /* Ir até a parte inferior do card */
+    background: #3c3b3b; /* Fundo ligeiramente diferente para destaque */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Manter as bordas arredondadas do card */
+    z-index: 5; /* Garantir que fique acima do conteúdo do card */
+    overflow-y: auto; /* Adicionar scroll se o conteúdo for muito longo */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Adiciona transição para opacidade e escala */
+}
+
+.team-info-details.open {
+    opacity: 1; /* Torna visível */
+    transform: scale(1); /* Retorna ao tamanho normal */
+    pointer-events: auto; /* Permite interações */
+}
+
+.team-info-details h4 {
+    font-size: 1.1rem;
+    color: #c9c8c8;
+    margin-bottom: 10px;
+}
+
+.team-info-details p {
+    font-size: 0.9rem;
+    color: #a19a9a;
+    line-height: 1.6;
+    margin-bottom: 0; /* Remover margem inferior do último parágrafo */
 }
 
 .servicos {
-    background: #e9ecef;
+    background: #1a1a1a; /* Fundo da seção Serviços */
 }
 
 .servicos-grid {
@@ -394,39 +457,39 @@ h2 {
 }
 
 .servico-card {
-    background: #fff;
+    background: #222; /* Fundo do card do Serviço */
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-    padding: 30px 20px; /* Ajustado padding */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    padding: 30px 20px;
     text-align: center;
-    width: 280px; /* Ajustado largura */
+    width: 280px;
     transition: transform 0.2s ease-in-out;
 }
 
 .servico-card:hover {
-    transform: translateY(-8px); /* Ajustado hover */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
 .servico-card i {
-    font-size: 2.5rem; /* Ajustado tamanho do ícone */
-    color: #1a365d;
-    margin-bottom: 15px; /* Ajustado margem */
+    font-size: 2.5rem;
+    color: #ffd600; /* Cor do ícone ajustada */
+    margin-bottom: 15px;
 }
 
 .servico-card h3 {
-    margin-bottom: 10px; /* Ajustado margem */
-    font-size: 1.25rem; /* Ajustado tamanho */
-    color: #1a365d; /* Cor do título */
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #fff; /* Cor do título ajustada */
 }
 
 .servico-card p {
     font-size: 1rem;
-    color: #555; /* Cor do texto */
+    color: #bbb; /* Cor do texto ajustada */
 }
 
 .contato {
-    background: #fff;
+    background: #222; /* Fundo da seção Contato */
 }
 
 .contato-content {
@@ -452,39 +515,41 @@ h2 {
 
 .form-group label {
     margin-bottom: 6px;
-    font-weight: 600; /* Ajustado peso da fonte */
-    color: #1a365d; /* Cor do label */
+    font-weight: 600;
+    color: #ffd600; /* Cor do label ajustada */
 }
 
 .form-group input, .form-group textarea {
-    padding: 12px; /* Ajustado padding */
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #555; /* Cor da borda ajustada */
     border-radius: 6px;
     font-size: 1rem;
+    background: #333; /* Fundo dos campos ajustado */
+    color: #eee; /* Cor do texto nos campos ajustada */
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
-    border-color: #1a365d;
-    box-shadow: 0 0 5px rgba(26, 54, 93, 0.2);
+    border-color: #ffd600; /* Cor da borda ao focar ajustada */
+    box-shadow: 0 0 5px rgba(255, 214, 0, 0.5); /* Sombra ao focar mais forte */
 }
 
 .btn-enviar {
-    background: #1a365d;
-    color: #fff;
+    background: #ffd600; /* Cor do botão ajustada */
+    color: #1a1a1a; /* Cor do texto do botão ajustada */
     border: none;
     padding: 12px 32px;
     border-radius: 6px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background 0.2s ease-in-out;
-    align-self: flex-start; /* Alinhar botão à esquerda */
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    align-self: flex-start;
 }
 
 .btn-enviar:hover {
-    background: #ffd600;
-    color: #1a365d; /* Cor do texto no hover */
+    background: #fff; /* Cor de hover do botão ajustada */
+    color: #1a1a1a; /* Cor do texto no hover do botão ajustada */
 }
 
 .contato-info {
@@ -494,19 +559,19 @@ h2 {
 }
 
 .contato-info p {
-    margin-bottom: 15px; /* Ajustado margem */
+    margin-bottom: 15px;
     font-size: 1.1rem;
-    color: #555; /* Cor do texto */
+    color: #bbb; /* Cor do texto ajustada */
 }
 
 .contato-info i {
-    color: #1a365d;
-    margin-right: 10px; /* Ajustado margem */
+    color: #ffd600; /* Cor do ícone ajustada */
+    margin-right: 10px;
 }
 
 /* Footer */
 .footer {
-    background: #222;
+    background: #0d0d0d; /* Fundo do rodapé igual ao body */
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -524,6 +589,7 @@ h2 {
 .footer-logo img {
     height: 50px;
     margin-bottom: 15px;
+    filter: brightness(0) invert(1); /* Deixar logo branco para fundo escuro */
 }
 
 .footer-links {
@@ -535,13 +601,13 @@ h2 {
 }
 
 .footer-links a {
-    color: #fff;
+    color: #bbb; /* Cor dos links do rodapé ajustada */
     font-size: 1rem;
     transition: color 0.2s ease-in-out;
 }
 
 .footer-links a:hover {
-    color: #ffd600;
+    color: #fff; /* Cor de hover dos links do rodapé ajustada */
 }
 
 .footer-social {
@@ -549,20 +615,20 @@ h2 {
 }
 
 .footer-social a {
-    color: #fff;
-    font-size: 1.4rem; /* Ajustado tamanho ícone */
-    margin: 0 8px; /* Ajustado margem */
+    color: #bbb; /* Cor dos ícones sociais do rodapé ajustada */
+    font-size: 1.4rem;
+    margin: 0 8px;
     transition: color 0.2s ease-in-out;
 }
 
 .footer-social a:hover {
-    color: #ffd600;
+    color: #fff; /* Cor de hover dos ícones sociais do rodapé ajustada */
 }
 
 .footer-copy {
     width: 100%;
-    font-size: 0.95rem; /* Ajustado tamanho */
-    color: #bbb;
+    font-size: 0.95rem;
+    color: #888; /* Cor do texto de copyright ajustada */
 }
 
 /* Responsividade */
@@ -578,16 +644,16 @@ h2 {
         padding: 60px 0;
     }
     .hero-title {
-        font-size: 3.5rem; /* Ajustado */
+        font-size: 3.5rem;
     }
     .hero-subtitle {
-        font-size: 1.1rem; /* Ajustado */
+        font-size: 1.1rem;
         right: 2vw;
         bottom: 6vh;
     }
     .about-content {
         flex-direction: column;
-        gap: 30px; /* Ajustado */
+        gap: 30px;
     }
     .about-img {
         width: 100%;
@@ -597,29 +663,29 @@ h2 {
      }
     .team-grid, .servicos-grid {
         flex-direction: column;
-        gap: 20px; /* Ajustado */
+        gap: 20px;
     }
     .contato-content {
         flex-direction: column;
-        gap: 30px; /* Ajustado */
+        gap: 30px;
     }
     .contato-info {
         text-align: center;
     }
     .btn-enviar {
-        align-self: center; /* Centralizar botão no mobile */
+        align-self: center;
     }
 }
 @media (max-width: 600px) {
     .header-inner {
-        padding: 0 15px; /* Ajustado */
+        padding: 0 15px;
     }
     .nav-list {
         display: none;
         position: absolute;
         top: 70px;
         right: 0;
-        background: #1a365d; /* Cor do menu mobile */
+        background: #1a365d;
         flex-direction: column;
         width: 100vw;
         padding: 20px 0;
@@ -630,39 +696,39 @@ h2 {
     }
     .nav-toggle {
         display: block;
-        color: #fff; /* Cor do ícone mobile */
-        font-size: 1.8rem; /* Ajustado tamanho */
+        color: #fff;
+        font-size: 1.8rem;
     }
     .logo-img {
-        height: 30px; /* Ajustado */
+        height: 30px;
     }
     .nav-link {
-        padding: 10px 20px; /* Ajustado padding */
+        padding: 10px 20px;
         text-align: center;
-        font-size: 1rem; /* Ajustado */
+        font-size: 1rem;
     }
      .nav-dropdown .dropdown-menu {
-        position: static; /* Posição estática no mobile */
-        background: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+        position: static;
+        background: rgba(255, 255, 255, 0.1);
         box-shadow: none;
         border-radius: 0;
         min-width: auto;
      }
      .dropdown-menu li a {
-        padding: 8px 30px; /* Ajustado padding */
+        padding: 8px 30px;
      }
     .nav-search {
-        margin-left: 0; /* Resetar margem */
-        padding-top: 10px; /* Adicionado padding */
-        border-top: 1px solid rgba(255, 255, 255, 0.1); /* Separador */
-        margin-top: 10px; /* Adicionado margem */
+        margin-left: 0;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
     }
 
     .hero-title {
-        font-size: 2.5rem; /* Ajustado */
+        font-size: 2.5rem;
     }
     .hero-subtitle {
-        font-size: 0.9rem; /* Ajustado */
+        font-size: 0.9rem;
         right: 1vw;
         bottom: 4vh;
     }
@@ -670,22 +736,36 @@ h2 {
         width: 100%;
     }
     .team-card {
-         width: 180px; /* Ajustado */
+         width: 180px;
     }
     .servico-card {
-        width: 220px; /* Ajustado */
+        width: 220px;
     }
      .contato-form {
-        flex-basis: 100%; /* Ocupar largura total */
+        flex-basis: 100%;
      }
      .contato-info {
-        flex-basis: 100%; /* Ocupar largura total */
+        flex-basis: 100%;
      }
     .footer-links {
-        gap: 6px; /* Ajustado */
+        gap: 6px;
     }
     .footer-social a {
-        font-size: 1.2rem; /* Ajustado */
-        margin: 0 4px; /* Ajustado */
+        font-size: 1.2rem;
+        margin: 0 4px;
     }
+}
+
+.close-details {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #ccc; /* Cor do ícone de fechar */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-details:hover {
+    color: #fff; /* Cor de hover */
 } 

@@ -126,4 +126,24 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.servico-card').forEach(card => {
         observer.observe(card);
     });
+
+    // Mostrar/ocultar detalhes do membro da equipe ao clicar no botão "Saiba Mais"
+    document.querySelectorAll('.btn-saiba-mais').forEach(button => {
+        button.addEventListener('click', function() {
+            const details = this.nextElementSibling; // Pega a próxima div com os detalhes
+            if (details && details.classList.contains('team-info-details')) {
+                details.classList.toggle('open');
+            }
+        });
+    });
+
+    // Fechar detalhes do membro da equipe ao clicar no ícone de fechar
+    document.querySelectorAll('.close-details').forEach(closeButton => {
+        closeButton.addEventListener('click', function() {
+            const details = this.parentElement; // Pega a div pai com os detalhes
+            if (details && details.classList.contains('team-info-details')) {
+                details.classList.remove('open');
+            }
+        });
+    });
 }); 
