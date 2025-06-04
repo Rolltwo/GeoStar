@@ -215,7 +215,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background:  /* Overlay mais escuro */
+    background: rgba(0, 0, 0, 0.5); /* Overlay mais escuro */
     z-index: 1;
 }
 
@@ -544,7 +544,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
     padding: 30px 20px;
-    text-align: center;
+    text-align: center; /* Centraliza o conteúdo inline-block como o botão */
     width: 280px;
     transition: transform 0.2s ease-in-out;
 }
@@ -569,6 +569,33 @@ h2 {
 .servico-card p {
     font-size: 1rem;
     color: #bbb; /* Cor do texto ajustada */
+}
+
+.btn-saiba-mais:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para os botões Saiba Mais nos cards de serviço */
+.servico-card .btn-saiba-mais {
+    display: inline-block;
+    margin-top: 1.5rem; /* Espaço acima do botão */
+    padding: 0.8rem 1.5rem;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #1a1a1a; /* Borda inicial */
+}
+
+.servico-card .btn-saiba-mais:hover {
+    background-color: #2b6cb0; /* Cor azul no hover */
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-color: #2b6cb0;
 }
 
 .contato {
