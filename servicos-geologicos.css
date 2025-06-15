@@ -388,30 +388,33 @@
 
 /* Estilos específicos para a seção Aerofotogrametria */
 .aerofotogrametria-sub-servicos {
-    margin-top: 3rem; /* Aumentar espaço acima dos sub-serviços */
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sub-servico-item {
-    display: flex; /* Usar flexbox para texto e imagem */
-    align-items: center; /* Alinhar verticalmente */
-    gap: 2rem; /* Espaço entre texto e imagem */
-    margin-bottom: 3rem; /* Espaço entre os sub-serviços */
-    padding: 1.5rem; /* Padding interno */
-    background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil */
-    border-radius: 8px; /* Bordas arredondadas */
-}
-
-.sub-servico-item:last-child {
-    margin-bottom: 0; /* Remover margem do último item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
 }
 
 .sub-servico-text {
-    flex-basis: 50%; /* Texto ocupa 50% */
-    flex-shrink: 1; /* Permitir que a área de texto encolha para evitar vazamento */
+    flex-basis: 50%;
+    flex-shrink: 1;
+    text-align: center;
 }
 
 .sub-servico-image {
-    flex-basis: 50%; /* Imagem ocupa 50% */
+    flex-basis: 50%;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -420,56 +423,54 @@
     border-radius: 8px;
 }
 
-.sub-servico-image img {
-    display: block;
-    width: 100%;
-    height: auto; /* Altura automática */
-    object-fit: cover; /* Cobrir a área */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
-}
-
-/* Ajustes de estilo para elementos dentro do sub-serviço */
 .sub-servico-text h3 {
-    color: #2b6cb0; /* Cor azul */
-    font-size: 1.6rem; /* Ajustar tamanho do subtítulo */
+    color: #2b6cb0;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin: 0 0 0.8rem; /* Ajustar margem */
+    margin: 0 0 0.8rem;
     padding-bottom: 0;
     border-bottom: none;
+    text-align: center;
 }
 
 .sub-servico-text .servico-features {
-    margin-top: 1rem; /* Ajustar margem superior da lista */
-    padding: 1rem 1.2rem; /* Ajustar padding da lista */
-    border-left: 3px solid #2b6cb0; /* Borda um pouco menor */
+    margin-top: 1rem;
+    padding: 1rem 1.2rem;
+    border-left: 3px solid #2b6cb0;
+    text-align: left;
 }
 
-.sub-servico-text .servico-features li {
-    padding-left: 1.5rem; /* Ajustar padding */
-    margin-bottom: 0.6rem; /* Ajustar margem */
-    font-size: 0.95rem; /* Ligeiramente menor */
+.sub-servico-text .servico-features ul {
+    display: inline-block;
+    text-align: left;
 }
 
-.sub-servico-text .servico-features li:before {
-    top: 4px; /* Ajustar posição */
-    font-size: 0.9rem; /* Ligeiramente menor */
+@media (max-width: 992px) {
+    .sub-servico-item {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .sub-servico-text,
+    .sub-servico-image {
+        flex-basis: 100%;
+        width: 100%;
+    }
 }
 
-/* Responsividade para os sub-serviços */
 @media (max-width: 768px) {
     .sub-servico-item {
-        flex-direction: column; /* Empilhar em telas menores */
+        flex-direction: column;
         gap: 1.5rem;
         padding: 1rem;
     }
     .sub-servico-text,
     .sub-servico-image {
-        flex-basis: auto; /* Remover base fixa */
-        width: 100%; /* Ocupar largura total */
+        flex-basis: auto;
+        width: 100%;
     }
     .sub-servico-image {
-        height: 200px; /* Altura fixa para imagem em mobile */
+        height: 200px;
     }
     .sub-servico-text h3 {
         font-size: 1.4rem;
